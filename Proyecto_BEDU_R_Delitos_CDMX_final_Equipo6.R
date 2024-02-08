@@ -2,16 +2,12 @@ library(ggplot2)
 library(dplyr)
 library(tidyverse)
 library(sf)
-library(rgdal)
 
-setwd("C:/Users/rober/Downloads/bedu")
 
-delitos.data<-read.csv("C:/Users/rober/Downloads/bedu/carpetasFGJ_acumulado_2023_12.csv", header=T)
-alcaldias <- read_sf("alcaldias.geojson")
-
+setwd("C:/Users/User/Downloads")
 # Leer datos en un Dataframe
-delitos.data <- read.csv("C:\\Users\\rober\\Downloads\\carpetasFGJ_acumulado_2023_12.csv", header=T)
-
+delitos.data<-delitos.data<-carpetasFGJ_acumulado_2023_12
+alcaldias <- read_sf("alcaldias.geojson")
 
 # Estadísticas y descripción de nuestras variables
 summary(delitos.data)
